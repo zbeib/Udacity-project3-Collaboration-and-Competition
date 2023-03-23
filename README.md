@@ -38,4 +38,4 @@ The policy network and target policy network also have identical architectures: 
 
 The agents each use a discount rate of 0.99.
 
-The agents are each trained in a training loop for either 2000 episodes (with a max of 1000 timesteps each) or when they collectively reach an average reward over 100 episodes of 0.5 or greater.
+The agents are each trained in a training loop for either 2000 episodes (with a max of 2000 timesteps each) or when they collectively reach an average reward over 100 episodes of 0.5 or greater.
