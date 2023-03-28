@@ -28,14 +28,3 @@ The environment is considered solved, when the average (over 100 episodes) of th
     
 2. Place the file in the DRLND GitHub repository, in the `p3_collab-compet/` folder, and unzip (or decompress) the file.</br>
 3. Follow the instructions in `Tennis.ipynb` to get started with training your own agent!</br>
-
-### Explanation
-My solution for this environment uses the actor-critic MADDPG algorithm with fixed targets (for both actor and critic), soft updates, experienced replay, and added Ornstein–Uhlenbeck noise. The 2 agents are each created with four internal networks: a Q network, a deterministic policy network, a target Q network, and a target policy network.
-
-The Q network and the target Q network have identical architectures: 3 fully-connected layers joined by ReLU activation functions and batch normalizatoin layers. The final output is entered into a tanh activation function.
-
-The policy network and target policy network also have identical architectures: 3 fully-connected layers joined by ReLU activation functions with a batch normalization layer after the first fully-connected layer.
-
-The agents each use a discount rate of 0.99.
-
-The agents are each trained in a training loop for either 2000 episodes (with a max of 2000 timesteps each) or when they collectively reach an average reward over 100 episodes of 0.5 or greater.
