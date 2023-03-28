@@ -23,8 +23,8 @@ One of the key innovations of DDPG is the use of a replay buffer, which stores e
 •	128 -> action_size -> tanh<br>
 
 <strong>The critic (and the critic target) network uses 3 fully-connected layers:</strong><br>
-•	batch normalization -> state_size -> 128 -> ReLU<br>
-•	128 + action_size -> 128 -> ReLU<br>
+•	batch normalization -> state_size -> 128 -> Leaky ReLU<br>
+•	128 + action_size -> 128 -> Leaky ReLU<br>
 •	128 -> 1<br>
 
 #### Parameters
