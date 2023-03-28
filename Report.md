@@ -43,5 +43,6 @@ The agents solved the environment (by reaching a collective average reward of 0.
 
 ## Future Work
 Several improvements to DDPG can be considered to improve the performance:
-1.	PPO (Proximal Policy Optimization): PPO is a policy gradient method that is more sample-efficient than DDPG and other actor-critic algorithms. It uses a clipped surrogate objective function to update the policy parameters, which prevents large policy updates that can lead to instability.
-2.	HER (Hindsight Experience Replay): HER is a technique that can be used with any reinforcement learning algorithm, including DDPG, to improve sample efficiency in tasks with sparse rewards. It works by relabeling the achieved goal in a trajectory with a different goal, which is a state that the agent could have reached from the initial state. This allows the agent to learn from failures and achieve more successful trajectories.
+1.	Prioritized Experience Replay: This method prioritizes the experiences based on their importance and samples them more frequently. This can help the agent to learn from more important experiences, which can accelerate the learning process.
+2.	Exploration Strategies: Exploration is crucial for reinforcement learning. Techniques like noise injection and parameter space exploration can be used to encourage exploration and prevent the agent from getting stuck in a local optimum.
+3.	Learning Rate Scheduling: Adjusting the learning rate over time can improve the convergence of the algorithm. Techniques like cyclical learning rates and learning rate decay can be used to optimize the learning rate.
