@@ -1,4 +1,4 @@
-# Project 2: Collaboration and Competition
+# Project 3: Collaboration and Competition
 ## Introduction
 In this project, we will explore how policy-based methods can be used to learn the optimal policy in a model-free Reinforcement Learning setting using a Unity environment. 
 
